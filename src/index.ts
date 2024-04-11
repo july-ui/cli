@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { Color } from '@utils/color';
 import { Commands } from '@commands';
 import { hideBin } from 'yargs/helpers';
@@ -7,7 +9,6 @@ try {
 	const julyYargs = yargs(hideBin(process.argv));
 
 	for (let i = 0; i < Commands.length; i++) {
-		console.log(Commands[i].command);
 		julyYargs.command(
 			Commands[i].command,
 			Commands[i].description,
