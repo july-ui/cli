@@ -14,13 +14,13 @@ const options = (
 ): yargs.Argv<Record<string, unknown>> => {
 	return yarg
 		.positional('component', {
-			describe: 'The component you want to add',
+			describe: 'The component you want to add.',
 			choices: ['button'],
 		})
 		.option('path', {
 			alias: 'p',
 			type: 'string',
-			description: 'Path to the file to process',
+			description: 'Path where the component will be stored.',
 		});
 };
 
