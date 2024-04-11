@@ -22,7 +22,7 @@ jobs:
         with:
           name: dist-without-markdown
           path: |
-            dist
+            dist/**/*
             !dist/**/*.md
 
   publish-npm:
