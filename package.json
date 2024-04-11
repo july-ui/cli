@@ -1,6 +1,6 @@
 {
 	"name": "@july-ui/cli",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "This is package is ment to be used to install all july-ui components that you like.",
 	"main": "index.js",
 	"scripts": {
