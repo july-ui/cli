@@ -4,7 +4,10 @@
   "description": "This is package is ment to be used to install all july-ui components that you like.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "build:prod": "tsc --project tsconfig.prod.json"
   },
   "repository": {
     "type": "git",
@@ -12,6 +15,13 @@
   },
   "keywords": [
     "@july-ui"
+  ],
+  "bin": {
+    "july": "./dist/index.js"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md"
   ],
   "author": "Marvin Koch",
   "license": "MIT",
